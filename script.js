@@ -10,15 +10,18 @@ function timer(seconds) {
     // Check if we should stop it
     if (secondsLeft < 0) {
       clearInterval(countdown);
+      return;
     }
     // Display it
-    displayTimeLeft(seconds); 
+    displayTimeLeft(secondsLeft); 
   }, 1000)
 };
 
 function displayTimeLeft(seconds) {
   console.log(seconds)
 }
+
+timer(3)
 
 
  
